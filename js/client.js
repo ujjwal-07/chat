@@ -5,6 +5,10 @@ const messageInput = document.getElementById('messageInp');
 const messageContainer = document.querySelector('.container');
 var audio = new Audio('iphone_text_message.mp3')
 
+var xH = messageContainer.scrollHeight; 
+messageContainer.scrollTo(0, xH);
+
+
 const append = (message, position)=>{
 const messageElement = document.createElement('div');
 messageElement.innerText = message;
